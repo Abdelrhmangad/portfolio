@@ -5,25 +5,52 @@
     box-sizing: border-box;
     font-family: var(--main-font);
 }
+body{
+    height: 3000px;
+}
+
+.container{
+    width: 70vw;
+    margin: auto;
+}
+
+.yellow-tape{
+    position: absolute;
+    background: #FFFF60;
+    width: 60vw;
+    padding: 1.5em;
+    z-index: -1;
+    font-size: 1.5em;
+}
 /*End Global Styles */
+
 
 /* Start Root Styles */
 :root{
     --font-size:1.3em;
     --main-font: 'Raleway', sans-serif;
 }
+
 /* End  Root Styles */
+
 
 /* Start Nav Bar section */
 nav{
     background: #fffefe;
     padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size:var(--font-size)
+    font-size:var(--font-size);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    /* ################## THis will be added with js on scrol */
+    /* box-shadow: 1px 1px 55px rgba(0, 0, 0, 0.062); */
 }
-nav .dropdown{
+nav .container .gad{
+    float: left;
+    padding: 10px;
+}
+nav .container .dropdown{
+    float: right;
     cursor: pointer;
     padding: 10px;
 }
@@ -35,6 +62,7 @@ nav .dropdown{
 
 section.landing-page{
     padding: 50px;
+    padding-top: 135px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,17 +88,57 @@ section.landing-page .intro-name .my-name{
 }
 /* ===============start Style of Yellow Tape */
 section.landing-page .yellow-tape{
-    position: absolute;
     left: 180px;
     bottom: 70px;
-
-    background: #FFFF60;
-    width: 60vw;
-    padding: 1.5em;
-    z-index: -1;
     text-align: right;
     font-size: 1.5em;
 }
 /* ===============End Style of Yellow Tape */
 
 /* End landing page Section */
+
+
+/* Start Who Am I Section */
+.who-me{
+    padding: 100px;
+    position: relative;
+    border-bottom: 5px solid red;
+}
+.who-me h2{
+    font-size:3em ;
+    font-weight: bold;
+}
+.who-me .sec-content{
+    position: relative;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        " tape img "
+        " para img ";
+}
+
+.who-me .sec-content .yellow-tape{
+    grid-area: tape;
+    left:155px;
+    top:25px;
+    text-align: left;
+}
+.who-me .sec-content img{
+    grid-area: img;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0px 30px 60px rgba(0,0,0,35%);
+}
+
+.who-me .sec-content .descripe-me{
+    grid-area: para;
+
+    position: relative;
+    top: -50px;
+    padding: 10px;
+    line-height:25px;
+    font-size: 1.275em;
+    font-weight: 400;
+}
+/* End Who Am I Section */
