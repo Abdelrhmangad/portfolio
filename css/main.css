@@ -72,7 +72,10 @@ section.landing-page{
 section.landing-page img{
     width: 300px;
     height: 400px;
-    box-shadow: 0px 30px 60px rgba(0,0,0,35%);
+    /* box-shadow: 0px 30px 60px rgba(0,0,0,35%); */
+    -webkit-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
+    -moz-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
+         box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
 }
 section.landing-page .intro-name{
     margin-left: 50px;
@@ -128,7 +131,9 @@ section.landing-page .yellow-tape{
     grid-area: img;
     width: 300px;
     height: 400px;
-    box-shadow: 0px 30px 60px rgba(0,0,0,35%);
+    -webkit-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
+    -moz-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
+         box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
 }
 
 .who-me .sec-content .descripe-me{
