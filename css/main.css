@@ -1,0 +1,76 @@
+/* Start Global Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+/*End Global Styles */
+
+/* Start Root Styles */
+:root{
+    --font-size:1.3em;
+    --main-font: 'Raleway', sans-serif;
+}
+/* End  Root Styles */
+
+/* Start Nav Bar section */
+nav{
+    background: #fffefe;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:var(--font-size)
+}
+nav .dropdown{
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* End Nav Bar section */
+
+
+/* Start landing page Section */
+
+section.landing-page{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+section.landing-page img{
+    width: 300px;
+    height: 400px;
+    box-shadow: 0px 30px 60px rgba(0,0,0,35%);
+}
+section.landing-page .intro-name{
+    margin-left: 50px;
+    margin-top: -120px;
+}
+section.landing-page .intro-name p{
+    font-size: 2em;
+    font-weight: 10;
+}
+section.landing-page .intro-name .my-name{
+    font-size: 4em;
+    font-weight: bold;
+}
+/* ===============start Style of Yellow Tape */
+section.landing-page .yellow-tape{
+    position: absolute;
+    left: 180px;
+    bottom: 70px;
+
+    background: #FFFF60;
+    width: 60vw;
+    padding: 1.5em;
+    z-index: -1;
+    text-align: right;
+    font-size: 1.5em;
+}
+/* ===============End Style of Yellow Tape */
+
+/* End landing page Section */
