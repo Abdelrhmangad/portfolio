@@ -19,7 +19,7 @@ body{
     background: var(--main-color);
     width: 60vw;
     padding: 1.5em;
-    z-index: -1;
+    z-index: 1;
     font-size: 1.5em;
 }
 /*End Global Styles */
@@ -30,6 +30,8 @@ body{
     --font-size:1.3em;
     --main-font: 'Raleway', sans-serif;
     --main-color:#ffff60;
+    --background-color:#fff;
+    --Sec-background-color:#f3f3f3;
 }
 
 /* End  Root Styles */
@@ -37,7 +39,7 @@ body{
 
 /* Start Nav Bar section */
 nav{
-    background: #fffefe;
+    background: var(--background-color);
     padding: 20px;
     font-size:var(--font-size);
     position: fixed;
@@ -45,6 +47,9 @@ nav{
     z-index: 9999;
     /* ################## THis will be added with js on scrol */
     /* box-shadow: 1px 1px 55px rgba(0, 0, 0, 0.062); */
+    -webkit-box-shadow: 0 10px 20px -6px rgb(248, 248, 248);
+    -moz-box-shadow: 0 10px 20px -6pxrgb(248, 248, 248);
+         box-shadow: 0 10px 20px -6px rgb(248, 248, 248);
 }
 nav .container .gad{
     float: left;
@@ -62,8 +67,9 @@ nav .container .dropdown{
 /* Start landing page Section */
 
 section.landing-page{
+    background: var(--background-color);
     padding: 50px;
-    padding-top: 135px;
+    padding-top: 190px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,6 +83,7 @@ section.landing-page img{
     -webkit-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
     -moz-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
          box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
+    z-index: 2;
 }
 section.landing-page .intro-name{
     margin-left: 50px;
@@ -104,6 +111,7 @@ section.landing-page .yellow-tape{
 
 /* Start Who Am I Section */
 .who-me{
+    background: var(--background-color);
     padding: 100px;
     position: relative;
 }
@@ -134,7 +142,8 @@ section.landing-page .yellow-tape{
     -webkit-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
     -moz-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
          box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
-}
+    z-index: 2
+;}
 
 .who-me .sec-content .descripe-me{
     grid-area: para;
@@ -155,9 +164,9 @@ section.landing-page .yellow-tape{
 /* Start Pojects Section */
 section.projects{
     position: relative;
-    /* top: -120px; */
-    padding: 30px;
-    background: #f3f3f3;
+    padding: 50px;
+    background: var(--Sec-background-color);
+    text-align: center;
 }
 section.projects h2{
     font-size:2.7em ;
@@ -182,7 +191,6 @@ section.projects.project img{
     -webkit-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
     -moz-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
          box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
-
 }
 section.projects .projects-file .project .project-name{
     padding-top: 20px;
