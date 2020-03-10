@@ -6,7 +6,7 @@
     font-family: var(--main-font);
 }
 body{
-    height: 3000px;
+    /* height: 3000px; */
 }
 
 .container{
@@ -105,7 +105,6 @@ section.landing-page .yellow-tape{
 .who-me{
     padding: 100px;
     position: relative;
-    border-bottom: 5px solid red;
 }
 .who-me h2{
     font-size:3em ;
@@ -140,10 +139,14 @@ section.landing-page .yellow-tape{
     grid-area: para;
 
     position: relative;
-    top: -50px;
+    top: -180px;
     padding: 10px;
-    line-height:25px;
+    line-height:30px;
     font-size: 1.275em;
     font-weight: 400;
 }
+.who-me .sec-content .descripe-me strong{
+    font-weight: bolder;
+}
+
 /* End Who Am I Section */
