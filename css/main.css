@@ -191,3 +191,12 @@ section.projects .projects-file .project .project-name{
     font-weight: bolder;
 }
 /* End Pojects Section */
+
+/* Start Footer Section */
+footer{
+    padding: 20px;
+    text-align: center;
+    background: var(--main-color);
+    font-size: 1.5em;
+}
+/* End Footer Section */
