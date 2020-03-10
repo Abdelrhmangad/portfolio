@@ -16,7 +16,7 @@ body{
 
 .yellow-tape{
     position: absolute;
-    background: #FFFF60;
+    background: var(--main-color);
     width: 60vw;
     padding: 1.5em;
     z-index: -1;
@@ -29,6 +29,7 @@ body{
 :root{
     --font-size:1.3em;
     --main-font: 'Raleway', sans-serif;
+    --main-color:#ffff60;
 }
 
 /* End  Root Styles */
@@ -139,7 +140,7 @@ section.landing-page .yellow-tape{
     grid-area: para;
 
     position: relative;
-    top: -180px;
+    top: -150px;
     padding: 10px;
     line-height:30px;
     font-size: 1.275em;
@@ -150,3 +151,43 @@ section.landing-page .yellow-tape{
 }
 
 /* End Who Am I Section */
+
+/* Start Pojects Section */
+section.projects{
+    position: relative;
+    /* top: -120px; */
+    padding: 30px;
+    background: #f3f3f3;
+}
+section.projects h2{
+    font-size:2.7em ;
+    font-weight: bold;
+}
+section.projects .projects-file{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+section.projects .projects-file .project{
+    margin: 20px;
+}
+section.projects .projects-file .project .project-img{
+    border-top: 5px solid var(--main-color);
+    border-radius: 5px;
+}
+section.projects.project img{
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
+    -moz-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
+         box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
+
+}
+section.projects .projects-file .project .project-name{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+/* End Pojects Section */
