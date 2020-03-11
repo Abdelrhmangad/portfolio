@@ -221,7 +221,7 @@ section.projects h2{
 }
 section.projects .projects-file{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -229,16 +229,51 @@ section.projects .projects-file .project{
     margin: 20px;
 }
 section.projects .projects-file .project .project-img{
+    position: relative;
     border-top: 5px solid var(--main-color);
     border-radius: 5px;
+    width: 550px;
+    height: 450px;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-box-shadow: 0 10px 20px -6px rgb(189, 189, 189);
+    -moz-box-shadow: 0 10px 20px -6px rgb(189, 189, 189);
+         box-shadow: 0 10px 20px -6px rgb(189, 189, 189);
+
+   
 }
-section.projects.project img{
+section.projects .projects-file .project .project-img:hover .demo-div{
+    transform: translateX(20px);
+}
+section.projects .projects-file .project .project-img .demo-div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    height: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--main-color);
+    border-radius:80% 0%  0%  0%;
+    z-index:2;
+
+    font-weight: bolder;
+    font-size: var(--font-size);
+    text-align: right;
+    cursor: pointer;
+
+    transform: translateX(250px);
+    transition: 0.4s all ease-in-out;
+}
+
+section.projects .projects-file .project img{
     width: 100%;
     height: 100%;
-    -webkit-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
-    -moz-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
-         box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
 }
+
 section.projects .projects-file .project .project-name{
     padding-top: 20px;
     padding-bottom: 20px;
