@@ -172,8 +172,9 @@ section.landing-page .yellow-tape{
     grid-template-columns: 5fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-        " tape img "
-        " para img ";
+        "tape img"
+        "para img";
+        height: auto;
 }
 
 .who-me .sec-content .yellow-tape{
