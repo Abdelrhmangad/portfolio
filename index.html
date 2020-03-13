@@ -13,9 +13,9 @@
 
     <!-- Start Nav Bar Section -->
     <nav class="page-header">
-        <aside class="side-menu">
+        <aside id="aside" class="side-menu">
             <ul class="nav-list">
-                <li class="close">
+                <li class="close" id="closeBtn" onclick="closeMenu()">
                     &#x292B;
                 </li>
                 <li>
@@ -24,7 +24,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#About">
+                    <a href="#about">
                         About Me
                     </a>
                 </li>
@@ -59,7 +59,7 @@
                     <h2>&lt;Gad&gt;</h2>
                 </a>
             </div>
-            <div class="dropdown">
+            <div class="dropdown" id="dropMenu" onclick="openMenu()">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="32" viewBox="0 0 32 32">
                     <title>menu</title>
                     <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"/>
@@ -71,7 +71,7 @@
 
 
     <!-- Start Landing Page section -->
-    <section class="landing-page">
+    <section class="landing-page" id="home">
         <img src="images/me.png" alt="Image of me smiling">
         <h1 class="intro-name">
             <p>Hi, I am</p>
@@ -85,7 +85,7 @@
 
 
 <!-- Start Who Am I Section -->
-<main class="who-me">
+<main class="who-me" id="about">
     <div class="social-media">
         <img class="phone" src="https://img.icons8.com/ios-filled/50/000000/phone.png">
         <div class="social-accounts">
@@ -131,7 +131,7 @@
 <!-- End Who Am I Section -->
 
 <!-- Start Projects Section -->
-<section class="projects">
+<section class="projects" id="projects">
     <h2>My Projects</h2>
 
     <div class="projects-file">
