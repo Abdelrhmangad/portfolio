@@ -31,7 +31,7 @@ a{
     --font-size:1.3em;
     --main-font: 'Raleway', sans-serif;
     /* --main-color:#fff600; */
-    --main-color:#e74c3c;
+    --main-color:#ff9f43;
     --background-color:#fff;
     --Sec-background-color:#f3f3f3;
 
@@ -138,8 +138,8 @@ section.landing-page{
     position: relative;
 }
 section.landing-page img{
-    width: 300px;
-    height: 400px;
+    width: 20rem;
+    height: 30rem;
     /* box-shadow: 0px 30px 60px rgba(0,0,0,35%); */
     -webkit-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
     -moz-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
@@ -147,26 +147,68 @@ section.landing-page img{
     z-index: 2;
 }
 section.landing-page .intro-name{
+    display: block;
     margin-left: 50px;
     margin-top: -120px;
 }
 section.landing-page .intro-name p{
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 10;
 }
 section.landing-page .intro-name .my-name{
-    font-size: 4em;
+    font-size: 4rem;
     font-weight: bold;
 }
 /* ===============start Style of Yellow Tape */
 section.landing-page .yellow-tape{
+    display: block;
     left: 180px;
     bottom: 70px;
     text-align: right;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 /* ===============End Style of Yellow Tape */
 
+
+/* -------------Start Responsive media for landing page Section */
+@media (max-width: 768px){
+    section.landing-page{
+        display:flex;
+        justify-content: center;
+    }
+    
+    section.landing-page img{
+        width: 160px;
+        height: 200px;
+        border-radius: 100%;
+        text-align: right;
+    }
+    section.landing-page .intro-name{
+        display: block;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 1rem;
+    }
+    section.landing-page .intro-name p{
+        font-size: 2rem;
+        font-weight: 10;
+    }
+    section.landing-page .intro-name .my-name{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    section.landing-page .yellow-tape{
+        margin: auto;
+        width: 50vw;
+        left: auto;
+        bottom: 0px;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+/* -------------End Responsive media for landing page Section */
 /* End landing page Section */
 
 
