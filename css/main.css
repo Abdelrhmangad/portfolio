@@ -13,6 +13,14 @@ a{
     width: 70vw;
     margin: auto;
 }
+/* Start Media responsivness */
+@media (max-width:997px){
+    .container{
+        width: 100%;
+        overflow: hidden;
+    }
+}
+/* End Media responsivness */
 
 .yellow-tape{
     position: absolute;
@@ -215,7 +223,9 @@ section.landing-page .yellow-tape{
 /* Start Who Am I Section */
 .who-me{
     background: var(--background-color);
+    margin: auto;
     padding: 100px;
+    padding-left:100px;
     position: relative;
 }
 /* Start Social Media Circle */
@@ -263,18 +273,20 @@ section.landing-page .yellow-tape{
 }
 /* ENd Social Media Circle */
 .who-me h2{
-    font-size:3em ;
+    font-size:3rem ;
     font-weight: bold;
+    text-align: left;
 }
 .who-me .sec-content{
     position: relative;
     display: grid;
+    height: auto;
+    text-align: left;
     grid-template-columns: 5fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
         "tape img"
         "para img";
-        height: auto;
 }
 
 .who-me .sec-content .yellow-tape{
@@ -300,12 +312,58 @@ section.landing-page .yellow-tape{
     top: -150px;
     padding: 10px;
     line-height:30px;
-    font-size: 1.275em;
+    font-size: 1.275rem;
     font-weight: 400;
 }
 .who-me .descripe-me strong{
     font-weight: bolder;
 }
+
+/* -------------- Start Responsivness media of who me section */
+@media (max-width:997px){
+    .who-me{
+        margin: auto;
+        padding-left: 100px;
+        padding-top:100px;
+    }
+    .who-me h2{
+        text-align:center;
+    }
+    .who-me .sec-content{
+    text-align: left;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "tape"
+        "para";
+    }
+
+    .who-me .sec-content .yellow-tape{
+        grid-area: tape;
+        left:auto;
+        top:0px;
+        padding-right: 50px;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .who-me .sec-content img{
+        display: none;
+    }
+    .who-me .sec-content .descripe-me{
+        grid-area: para;
+
+        position: relative;
+        top: -450px;
+        left: 0px;
+        padding-top: 10px;
+        line-height:30px;
+        font-size: 1rem;
+    }
+    .who-me .descripe-me strong{
+        font-weight: bolder;
+    }
+}
+/* -------------- ENd Responsivness media of who me section */
 
 /* End Who Am I Section */
 
@@ -329,13 +387,13 @@ section.projects .projects-file{
     align-items: center;
 }
 section.projects .projects-file .project{
-    margin: 20px;
+    margin-top: 20px;
 }
 section.projects .project .project-img{
     position: relative;
     border-top: 5px solid var(--main-color);
     border-radius: 5px;
-    width: 550px;
+    width:90vw;
     height: 450px;
     z-index: 1;
     overflow: hidden;
