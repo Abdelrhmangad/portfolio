@@ -368,32 +368,32 @@ section.landing-page .yellow-tape{
 /* End Who Am I Section */
 
 /* Start Pojects Section */
-section.projects{
+.projects{
     position: relative;
     padding: 50px;
+    margin-top: -50px;
     background: var(--Sec-background-color);
     text-align: center;
 }
-section.projects h2{
-    font-size:2.7em ;
+.projects h2{
+    font-size:2.7rem ;
     font-weight: bold;
     padding: 30px;
     margin-bottom: 30px;
 }
-section.projects .projects-file{
+.projects .projects-file{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
 }
-section.projects .projects-file .project{
-    margin-top: 20px;
+.projects .projects-file .project{
+    margin: 20px;
 }
-section.projects .project .project-img{
+.projects .project .project-img{
     position: relative;
     border-top: 5px solid var(--main-color);
     border-radius: 5px;
-    width:90vw;
     height: 450px;
     z-index: 1;
     overflow: hidden;
@@ -403,10 +403,10 @@ section.projects .project .project-img{
 
    
 }
-section.projects .project-img:hover .demo-div{
+.projects .project-img:hover .demo-div{
     transform: translateX(20px);
 }
-section.projects .project-img .demo-div{
+.projects .project-img .demo-div{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -430,20 +430,34 @@ section.projects .project-img .demo-div{
     transform: translateX(250px);
     transition: 0.4s all ease-in-out;
 }
-section.projects .demo-div a{
+.projects .demo-div a{
     color: var(--text-colors);
 }
-section.projects .projects-file .project img{
+.projects .projects-file .project img{
     width: 100%;
     height: 100%;
 }
 
-section.projects .project .project-name{
+.projects .project .project-name{
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: bolder;
 }
+
+/* --------------------------------------- STart Media responsivness of Projects  section*/
+@media (max-width:992px){
+    .projects{
+        margin-top: -450px;
+    }
+    section.projects .projects-file{
+        flex-wrap: wrap;
+    }
+    section.projects .project .project-img{
+        width:90vw;
+    }
+}
+/* --------------------------------------- End Media responsivness of Projects Section */
 /* End Pojects Section */
 
 /* Start Footer Section */
