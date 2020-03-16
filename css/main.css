@@ -394,6 +394,7 @@ section.landing-page .yellow-tape{
     position: relative;
     border-top: 5px solid var(--main-color);
     border-radius: 5px;
+    width: 40vw;
     height: 450px;
     z-index: 1;
     overflow: hidden;
