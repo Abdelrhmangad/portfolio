@@ -17,7 +17,6 @@ a{
 @media (max-width:997px){
     .container{
         width: 100%;
-        overflow: hidden;
     }
 }
 /* End Media responsivness */
@@ -179,7 +178,7 @@ section.landing-page .yellow-tape{
 
 
 /* -------------Start Responsive media for landing page Section */
-@media (max-width: 768px){
+@media (max-width: 900px){
     section.landing-page{
         display:flex;
         justify-content: center;
@@ -227,6 +226,7 @@ section.landing-page .yellow-tape{
     padding: 100px;
     padding-left:100px;
     position: relative;
+    height:100%;
 }
 /* Start Social Media Circle */
 .who-me .social-media{
@@ -279,88 +279,104 @@ section.landing-page .yellow-tape{
 }
 .who-me .sec-content{
     position: relative;
-    display: grid;
-    height: auto;
-    text-align: left;
-    grid-template-columns: 5fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "tape img"
-        "para img";
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
 }
 
 .who-me .sec-content .yellow-tape{
-    grid-area: tape;
-    left:155px;
-    top:25px;
-    text-align: left;
+    position: absolute;
+    font-size:1.4rem;
+    top: 10px;
+    left: 150px;
+    width:62vw;
 }
 .who-me .sec-content img{
-    grid-area: img;
-    width: 300px;
-    height: 400px;
-    -webkit-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
-    -moz-box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
-         box-shadow: 0 10px 20px -6px rgb(107, 107, 107);
-    z-index: 2
-;}
-
-.who-me .sec-content .descripe-me{
-    grid-area: para;
-
-    position: relative;
-    top: -150px;
-    padding: 10px;
-    line-height:30px;
-    font-size: 1.275rem;
-    font-weight: 400;
+    position:relative;
+    z-index: 1;
+    top: -30px;
+    height:400px;
 }
-.who-me .descripe-me strong{
-    font-weight: bolder;
+.who-me .sec-content .descripe-me{
+    font-size:1.4rem;
+    position: relative;
+    top:120px;
+    padding-bottom: 200px;
+    height:100% ;
 }
 
 /* -------------- Start Responsivness media of who me section */
-@media (max-width:997px){
+@media (max-width: 1024px){
+    /* .who-me{
+        background:red;
+    } */
+    .who-me .sec-content{
+        flex-wrap: wrap;
+        align-items: center;
+        overflow: visible;
+    }
+    .who-me .sec-content .yellow-tape{
+        font-size:1.1rem;
+        width: 50vw;
+        left: 0px;
+    }
+    .who-me .sec-content img{
+        position: absolute;
+        height: 120px;
+        width:120px;
+        top: -15px;
+        border-radius: 50%;
+        right:0px;
+    }
+    .who-me .sec-content .descripe-me{
+        font-size: 1.4rem;
+        position: relative;
+        height: 800px;
+    }
+}
+@media (max-width: 768px){
+    /* .who-me{
+        background:green;
+    } */
+    .who-me h2{
+        text-align:center;
+    }
+    .who-me .sec-content img{
+        position: absolute;
+        height: 120px;
+        width:120px;
+        border-radius: 50%;
+        bottom: -10px;
+        right:-40px;
+        box-shadow:0px 0px 5px 5px #d1d1d186;
+    }
+    .who-me .sec-content .descripe-me{
+        height:850px;
+    }
+}
+/* @media (max-width: 700px){
     .who-me{
-        margin: auto;
-        padding-left: 100px;
-        padding-top:100px;
+        
     }
     .who-me h2{
         text-align:center;
     }
-    .who-me .sec-content{
-    text-align: left;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "tape"
-        "para";
-    }
-
+} */
+@media (max-width: 480px){
+    /* .who-me{
+        background:blue;
+    } */
     .who-me .sec-content .yellow-tape{
-        grid-area: tape;
-        left:auto;
-        top:0px;
-        padding-right: 50px;
         text-align: center;
-        font-size: 1rem;
     }
     .who-me .sec-content img{
-        display: none;
+        z-index: 0;
+        right: -80px;
+        top: 60px;
     }
     .who-me .sec-content .descripe-me{
-        grid-area: para;
-
-        position: relative;
-        top: -380px;
-        left: 0px;
-        padding-top: 10px;
-        line-height:30px;
-        font-size: 1rem;
-    }
-    .who-me .descripe-me strong{
-        font-weight: bolder;
+        top: 150px;
+        height: 1200px;
     }
 }
 /* -------------- ENd Responsivness media of who me section */
