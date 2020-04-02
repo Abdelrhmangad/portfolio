@@ -339,7 +339,7 @@ section.landing-page .yellow-tape{
         width: 100%;
     }
     .who-me{
-        background:green;
+        /* background:green; */
         padding: 50px 15px;
         overflow: hidden;
     }
