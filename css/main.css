@@ -68,17 +68,21 @@ nav .side-menu{
     right: 0px;
     top: 0px;
     height: 100vh;
-    width: 400px;
+    width: 30vw;
     background: var(--main-color);
     z-index: 3;
-    transform: translateX(400px);
     transition: .6s all ease-in-out;
     -webkit-box-shadow: 0 10px 20px -6px rgba(248, 248, 248, 0.5);
     -moz-box-shadow: 0 10px 20px -6px rgba(248, 248, 248, 0.438);
          box-shadow: 0 10px 20px -6px rgba(82, 68, 68, 0.479);
-
+}
+@media (max-width:767px){
+    nav .side-menu{
+        width:100vw;
+    }  
 }
 nav .side-menu ul{
+    position: relative;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -88,10 +92,12 @@ nav .side-menu ul{
     color: var(--text-colors);
 }
 nav .side-menu ul li.close{
+    width: 30px;
+    color: #333;
     font-size:2.2em;
     position: absolute;
     top: -30px;
-    right: -130px;
+    left: 65px;
     cursor: pointer;
 }
 nav .side-menu ul li{
