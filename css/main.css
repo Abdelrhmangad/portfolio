@@ -6,6 +6,10 @@
     font-family: var(--main-font);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -357,13 +361,9 @@ section.landing-page .yellow-tape {
 /* -------------- Start Responsivness media of who me section */
 @media (max-width: 1024px) {
 
-    /* .who-me{
-        background:red;
-    } */
     .who-me .sec-content {
         flex-wrap: wrap;
         align-items: center;
-        overflow: visible;
     }
 
     .who-me .sec-content .yellow-tape {
@@ -377,8 +377,8 @@ section.landing-page .yellow-tape {
         height: 120px;
         width: 120px;
         top: -15px;
+        right: 20px;
         border-radius: 50%;
-        right: 0px;
     }
 
     .who-me .sec-content .descripe-me {
@@ -414,7 +414,7 @@ section.landing-page .yellow-tape {
     }
 
     .who-me .sec-content .descripe-me {
-        height: 900px;
+        height: 500px;
         width: 100%;
         margin-top: 20px;
     }
@@ -448,10 +448,10 @@ section.landing-page .yellow-tape {
 /* Start Pojects Section */
 .projects {
     position: relative;
+    padding: 30px;
     margin-top: -50px;
     background: var(--Sec-background-color);
     text-align: center;
-    overflow: hidden;
 }
 
 
@@ -472,6 +472,8 @@ section.landing-page .yellow-tape {
     justify-content: center;
     align-items: center;
     width: 50vw;
+    margin-bottom: 40px;
+
     /* background-color: rgb(35, 25, 46); */
 }
 
@@ -557,11 +559,12 @@ section.landing-page .yellow-tape {
     }
 
     .projects .projects-view .project {
-        width: 100vw;
+        width: 100%;
+        margin-top: 10px;
     }
 
     .projects .projects-view .project .project-img {
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
 }
