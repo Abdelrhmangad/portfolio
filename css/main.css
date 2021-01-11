@@ -355,7 +355,7 @@ section.landing-page .yellow-tape {
     font-size: 1.4rem;
     position: relative;
     top: 120px;
-    height: 100%;
+    height: 500px;
 }
 
 /* -------------- Start Responsivness media of who me section */
@@ -463,15 +463,16 @@ section.landing-page .yellow-tape {
 }
 
 .projects .projects-view {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projects .projects-view .project {
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 50vw;
+    width: 40vw;
     margin-bottom: 40px;
 
     /* background-color: rgb(35, 25, 46); */
