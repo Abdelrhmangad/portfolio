@@ -465,7 +465,7 @@ section.landing-page .yellow-tape {
 .projects .projects-view {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .projects .projects-view .project {
