@@ -1,15 +1,20 @@
-import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from 'assets/gamestack-list.jpg';
-import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from 'assets/gamestack-login.jpg';
-import sliceTextureLarge from 'assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceTexture from 'assets/slice-app.jpg';
-import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
+// import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
+// import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
+// import gamestackTexture2 from 'assets/gamestack-list.jpg';
+// import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
+// import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
+// import gamestackTexture from 'assets/gamestack-login.jpg';
+// import sliceTextureLarge from 'assets/slice-app-large.jpg';
+// import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
+// import sliceTexture from 'assets/slice-app.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
+// import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
+// import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
+import vetutionImg from 'assets/vetutions.png';
+
+import estansa7Img from 'assets/estansa7.png';
+// import estansa7MobileImg from 'assets/estansa7Mobile.png';
+
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
@@ -54,7 +59,7 @@ export const Home = () => {
     );
 
     sections.forEach(section => {
-      sectionObserver.observe(section.current);
+      if (section.current) sectionObserver.observe(section.current);
     });
 
     indicatorObserver.observe(intro.current);
@@ -70,7 +75,7 @@ export const Home = () => {
       <Meta
         title="FrontEnd Developer"
         description="Design portfolio of Abdelrahman Gad — a front end developer working on web & mobile
-          apps with a focus on pixel perfect, performance design, and accessibility."
+          apps with a focus on pixel perfect, performance, and accessibility."
       />
       <Intro
         id="intro"
@@ -83,16 +88,16 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="Marketplace website"
+        description="Developing a marketplace to help veterinaries buy their needs."
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="https://vetutions.com"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [sprTexture, sprTextureLarge],
+              srcSet: [vetutionImg],
               placeholder: sprTexturePlaceholder,
             },
           ],
@@ -100,10 +105,30 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-2"
-        alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
+        title="Mentorship webapp"
+        description="A website that helps newbies to become experts."
+        buttonText="View project"
+        buttonLink="https://estansa7.com"
+        model={{
+          type: 'laptop',
+          alt: 'Esntansah landing page',
+          textures: [
+            {
+              srcSet: [estansa7Img],
+              placeholder: sprTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      {/* <ProjectSummary
+        id="project-3"
+        alternate
+        sectionRef={projectTwo}
+        visible={visibleSections.includes(projectTwo.current)}
+        index={3}
         title="Video game progress tracking"
         description="Design and development for a video game tracking app built in React Native"
         buttonText="View website"
@@ -124,10 +149,10 @@ export const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-3"
+        id="project-4"
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
-        index={3}
+        index={4}
         title="Biomedical image collaboration"
         description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
         buttonText="View project"
@@ -142,7 +167,7 @@ export const Home = () => {
             },
           ],
         }}
-      />
+      /> */}
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}
