@@ -76,3 +76,10 @@ body {
     transform-origin: right;
   }
 }
+
+#linkedin-icon {
+  fill: #a0a0a0;
+}
+#linkedin-icon:hover {
+  fill: rgb(0, 229, 255);
+}
