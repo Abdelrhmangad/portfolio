@@ -1,10 +1,10 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": "https://hamishw.com",
+  "homepage": "https://abdelrhmangad.github.io/portfolio/",
   "description": "Portfolio site for Abdelrahman Gad",
-  "repository": "https://github.com/HamishMW/portfolio.git",
-  "author": "Abdelrahman Gad <hello@hamishw.com>",
+  "repository": "https://github.com/Abdelrhmangad/portfolio",
+  "author": "Abdelrahman Gad",
   "devDependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
     "@storybook/addon-a11y": "^6.5.10",
@@ -19,6 +19,7 @@
     "eslint": "^8.21.0",
     "eslint-config-next": "^12.2.5",
     "fs-extra": "^10.1.0",
+    "gh-pages": "^5.0.0",
     "globby": "^13.1.2",
     "postcss": "^8.4.16",
     "postcss-flexbugs-fixes": "^5.0.2",
