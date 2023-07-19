@@ -33,7 +33,7 @@ export const Uses = () => {
         />
         <ProjectHeader
           title="Uses"
-          description="A somewhat comprehensive list of tools, apps, and more that I use on a daily basis to design and code things."
+          description="A somewhat comprehensive list of tools, apps, and more that I use on a daily basis."
         />
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
@@ -59,21 +59,27 @@ export const Uses = () => {
                   </ListItem>
                   <ListItem>
                     For CSS I’ve used css-in-js solutions like
-                    styled-components, but these days I’m using  <Link href="https://tailwindcss.com/">TailwindCSS</Link>. Which offers me consistent, customizable fast and accessible workflow.
+                    styled-components, but these days I’m using  <Link href="https://tailwindcss.com/">TailwindCSS</Link>. Which offers me consistent, customizable and fast workflow.
+                    I can also use ChakraUI, MaterialUI, Vuetify and Bootstrap for styling.
                   </ListItem>
+                  {/* <ListItem>
+                    Other development I use are
+                    <div className='flex flex-col items-start justify-start'>
+                      <span>Javascript/Typesctipt</span>
+                      <span>Redux/RTK</span>
+                      <span>VueX</span>
+                      <span>Strapi</span>
+                      <span>Stripe/Hyperpay</span>
+                    </div>
+                  </ListItem> */}
                   <ListItem>
                     For 3D effects and image shaders I use{' '}
                     <Link href="https://greensock.com/gsap/">GSAP</Link> and <Link href="https://michalsnik.github.io/aos/">AOS</Link>. It has a bit of a
                     learning curve but you can do some really powerful stuff with them.
                   </ListItem>
                   <ListItem>
-                    For Javascript animations I use{' '}
-                    <Link href="https://www.framer.com/motion/">Framer Motion</Link>, it’s
-                    a great way to add spring animations to React and three.js.
-                  </ListItem>
-                  <ListItem>
                     For building and testing UI components I use{' '}
-                    <Link href="https://www.cypress.io/">Cypress</Link>.
+                    <Link href="https://www.cypress.io/">Cypress</Link>, <Link href="https://enzymejs.github.io/enzyme/">Enzyme</Link> and <Link href="https://jestjs.io/">JEST</Link>.
                   </ListItem>
                 </List>
               </ProjectSectionText>

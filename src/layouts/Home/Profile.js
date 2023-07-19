@@ -2,8 +2,8 @@ import profileKatakana from 'assets/katakana-profile.svg?url';
 // import profileImgLarge from 'assets/profile-large.jpg';
 import profileImgPlaceholder from 'assets/profile-placeholder.jpg';
 // import profileImg from 'assets/profile.jpg';
-import profileImgLarge from 'assets/profile-me.jpeg';
-import profileImg from 'assets/profile-me.jpeg';
+import profileImgLarge from 'assets/profile-me.jpg';
+import profileImg from 'assets/profile-me.jpg';
 import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
@@ -23,9 +23,12 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Gad, currently I live in Egypt working as a senior frontend developer at{' '}
-      <Link href="https://www.mauve.de/">Mauve</Link>. My projects include UI/UX designs development, UI
-      animations, and web-apps development. Being comfortable with code allows me to rapidly
+      I’m Gad a frontend developer with more than 4 years of experience, currently I live in Egypt working as a senior frontend developer at{' '}
+      <Link href="https://www.mauve.de/">Mauve</Link>.
+    </Text>
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
+      My projects include UI/UX designs development, UI
+      animations, and web-apps development. Having a keen eye for design with high and updated coding skills allows me to rapidly
       prototype and validate experiences. If you’re interested in the tools and software I
       use check out my <Link href="/uses">uses page</Link>.
     </Text>
