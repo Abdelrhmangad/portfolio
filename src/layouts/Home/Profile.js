@@ -24,7 +24,7 @@ const ProfileText = ({ visible, titleId }) => (
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I’m Gad a frontend developer with more than 4 years of experience, currently I live in Egypt working as a senior frontend developer at{' '}
-      <Link href="https://www.mauve.de/">Mauve</Link>.
+      <Link href="https://www.mauve.de/">Mauve</Link>, and I’m also a co-founder of <Link href="https://estansa7.com/">Estansa7</Link>.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       My projects include UI/UX designs development, UI
@@ -88,7 +88,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   placeholder={profileImgPlaceholder}
                   srcSet={[profileImg, profileImgLarge]}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                  alt="Me standing in front of the Torii on Miyajima, an island off the coast of Hiroshima in Japan"
+                  alt="Me setting on a table at a coffee shop."
                 />
                 <svg
                   aria-hidden="true"
