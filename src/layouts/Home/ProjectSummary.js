@@ -37,7 +37,7 @@ export const ProjectSummary = ({
   const indexText = index < 10 ? `0${index}` : index;
   const phoneSizes = `(max-width: ${media.tablet}px) 30vw, 20vw`;
   const laptopSizes = `(max-width: ${media.tablet}px) 80vw, 40vw`;
-
+  console.log("model", model);
   const renderKatakana = (device, visible) => (
     <svg
       aria-hidden="true"

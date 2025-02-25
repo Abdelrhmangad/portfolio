@@ -22,6 +22,12 @@ module.exports = {
       type: 'asset/resource',
     });
 
+    // Import images inside of src/assets
+    config.module.rules.push({
+      test: /\.(png|jpe?g|gif|webp|avif)$/i,
+      type: 'asset/resource',
+    });
+
     // Force url import with `?url`
     config.module.rules.push({
       resourceQuery: /url/,
