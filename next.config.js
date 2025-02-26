@@ -3,8 +3,6 @@ module.exports = {
   trailingSlash: true,
   pageExtensions: ['page.js', 'api.js'],
   output: "export",
-  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',
   webpack(config, { isServer }) {
     // Run custom scripts
     if (isServer) {
