@@ -97,7 +97,7 @@ jobs:
           path: ./out
 
       - name: List Uploaded Artifacts
-        run: ls -la ${{ runner.temp }}/pages-artifact
+        run: ls -la ./out
 
       - name: Deploy to GitHub Pages
         id: deployment
