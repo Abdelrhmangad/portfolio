@@ -96,6 +96,11 @@ jobs:
           name: nextjs-export
           path: ./out
 
+      - name: Verify downloaded files
+        run: ls -la ./out
+
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2 # Correctly using v2 for GitHub Pages
+        uses: actions/deploy-pages@v2
+        with:
+          artifact_path: ./out
