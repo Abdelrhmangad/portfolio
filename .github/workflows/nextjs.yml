@@ -46,7 +46,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Updated to use Node.js 18 (LTS)
+          node-version: '16'
           cache: ${{ steps.detect-package-manager.outputs.manager }}
 
       - name: Setup Pages
@@ -73,7 +73,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4 # Updated to use v4 for GitHub Pages
+        uses: actions/upload-pages-artifact@v2
         with:
           name: nextjs-export
           path: ./out
