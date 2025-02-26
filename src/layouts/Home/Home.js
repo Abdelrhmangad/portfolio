@@ -21,6 +21,7 @@ export const Home = () => {
   const projectTwo = useRef();
   const projectThree = useRef();
   const details = useRef();
+  console.log("process.env.NODE_ENV", process.env.NODE_ENV);
 
   useEffect(() => {
     const sections = [intro, projectOne, projectTwo, projectThree, details];
