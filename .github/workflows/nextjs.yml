@@ -1,11 +1,8 @@
-# Sample workflow for building and deploying a Next.js site to GitHub Pages
 name: Deploy Next.js site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ['master']
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 permissions:
@@ -18,7 +15,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -46,7 +42,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Updated to use Node.js 18 (LTS)
+          node-version: '18'
           cache: ${{ steps.detect-package-manager.outputs.manager }}
 
       - name: Setup Pages
@@ -73,12 +69,11 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4 # Updated to use v4 for GitHub Pages
+        uses: actions/upload-artifact@v4
         with:
           name: nextjs-export
           path: ./out
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
@@ -87,11 +82,14 @@ jobs:
     needs: build
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v4 # Updated to use v4 for GitHub Pages
+        uses: actions/download-artifact@v4
         with:
           name: nextjs-export
           path: ./out
 
+      - name: Verify artifact
+        run: ls -R ./out
+
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2 # Correctly using v2 for GitHub Pages
+        uses: actions/deploy-pages@v2
