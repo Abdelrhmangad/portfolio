@@ -27,6 +27,7 @@
   display: flex;
   position: relative;
   z-index: var(--zIndex2);
+  color: var(--colorTextBody);
 }
 
 .nav {
