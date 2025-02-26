@@ -12,7 +12,20 @@
 :root {
   --mobileNavOffset: calc(var(--spaceOuter) * 2 + var(--space2XL));
 }
+/* Style for scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
 
+::-webkit-scrollbar-track {
+  background: rgb(var(--rgbBackground));
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--colorTextBody);
+  border-radius: 10px;
+  border: 3px solid rgb(var(--rgbBackground));
+}
 body {
   font-family: var(--fontStack);
   font-weight: var(--fontWeightRegular);
