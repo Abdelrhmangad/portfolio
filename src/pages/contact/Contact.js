@@ -65,7 +65,21 @@ export const Contact = () => {
 
   return (
     <Section className={styles.contact}>
-      <Meta
+      <div className={styles.icons_container}>
+        <a className={styles.contact_link} href="tel:+201014601426" target="_blank" rel="noopener noreferrer">
+          <Icon className={styles.contact_icon} icon="phone" />
+          <span>
+            Call me on phone
+          </span>
+        </a>
+        <a className={styles.contact_link} href="https://www.linkedin.com/messaging/compose/?recipient=abdelrhman-gad-b1a414128" target="_blank" rel="noopener noreferrer">
+          <Icon className={styles.contact_icon} icon="message" />
+          <span>
+            Send Me a LinkedIn Message
+          </span>
+        </a>
+      </div>
+      {/* <Meta
         title="Contact"
         description="Send me a message if you’re interested in discussing a project or if you just want to say hi"
       />
@@ -175,7 +189,7 @@ export const Contact = () => {
             </Button>
           </div>
         )}
-      </Transition>
+      </Transition> */}
       <Footer className={styles.footer} />
     </Section>
   );

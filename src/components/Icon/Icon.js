@@ -16,6 +16,9 @@ import Pause from './svg/pause.svg';
 import Play from './svg/play.svg';
 import Send from './svg/send.svg';
 import Twitter from './svg/twitter.svg';
+import Phone from './svg/phone.svg';
+import Message from './svg/message.svg';
+
 
 export const icons = {
   arrowLeft: ArrowLeft,
@@ -34,6 +37,8 @@ export const icons = {
   play: Play,
   send: Send,
   twitter: Twitter,
+  phone: Phone,
+  message: Message
 };
 
 export const Icon = ({ icon, className, ...rest }) => {
