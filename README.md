@@ -34,6 +34,8 @@ npm run build
 
 ## Deployment
 
+# deployed to netlify https://app.netlify.com/sites/gads-dev/deploys/67bf234f164e388414bb2d81
+
 I've set up the site using AWS for hosting and serverless functions. You'll need an AWS account and the AWS CLI installed in order to deploy.
 
 Deploy the site to s3:
