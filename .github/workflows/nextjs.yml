@@ -96,8 +96,8 @@ jobs:
           name: nextjs-export
           path: ./out
 
-      - name: Verify downloaded files
-        run: ls -la ./out
+      - name: List Uploaded Artifacts
+        run: ls -la ${{ runner.temp }}/pages-artifact
 
       - name: Deploy to GitHub Pages
         id: deployment
