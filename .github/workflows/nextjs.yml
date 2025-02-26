@@ -78,11 +78,15 @@ jobs:
           name: nextjs-export
           path: ./out
 
+      - name: Debug Artifacts
+        run: ls -la ./out
+
   # Deployment job
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
     needs: build
     steps:
