@@ -113,6 +113,18 @@ export const Contact = () => {
               className={styles.input}
               data-status={status}
               style={getDelay(tokens.base.durationXS, initDelay)}
+              autoComplete="name"
+              label="Your Full name"
+              type="text"
+              name="full_name"
+              maxLength={512}
+              {...email}
+            />
+            <Input
+              required
+              className={styles.input}
+              data-status={status}
+              style={getDelay(tokens.base.durationXS, initDelay)}
               autoComplete="email"
               label="Your Email"
               type="email"
