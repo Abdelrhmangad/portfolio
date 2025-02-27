@@ -116,7 +116,7 @@ export const Contact = () => {
               autoComplete="name"
               label="Your Full name"
               type="text"
-              name="full_name"
+              name="name"
               maxLength={512}
               {...email}
             />
