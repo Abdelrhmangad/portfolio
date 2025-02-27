@@ -85,7 +85,12 @@ export const Contact = () => {
       />
       <Transition unmount in={!complete} timeout={1600}>
         {(visible, status) => (
-          <form className={styles.form} method="post" name="contact" data-netlify="true" netlify>
+          <form
+            className={styles.form}
+            method="post"
+            name="contact"
+            data-netlify="true"
+          >
             <Heading
               className={styles.title}
               data-status={status}
@@ -100,6 +105,9 @@ export const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS, initDelay, 0.4)}
             />
+            {/* Honeypot field for Netlify forms */}
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="bot-field" />
             <Input
               required
               className={styles.input}
@@ -108,6 +116,7 @@ export const Contact = () => {
               autoComplete="email"
               label="Your Email"
               type="email"
+              name="email"
               maxLength={512}
               {...email}
             />
@@ -119,6 +128,7 @@ export const Contact = () => {
               style={getDelay(tokens.base.durationS, initDelay)}
               autoComplete="off"
               label="Message"
+              name="message"
               maxLength={4096}
               {...message}
             />
@@ -156,6 +166,7 @@ export const Contact = () => {
           </form>
         )}
       </Transition>
+
       <Transition unmount in={complete}>
         {(visible, status) => (
           <div className={styles.complete} aria-live="polite">
