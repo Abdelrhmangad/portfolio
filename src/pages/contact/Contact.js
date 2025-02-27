@@ -17,6 +17,7 @@ import styles from './Contact.module.css';
 
 export const Contact = () => {
   const errorRef = useRef();
+  const name = useFormInput('');
   const email = useFormInput('');
   const message = useFormInput('');
   const [sending, setSending] = useState(false);
@@ -117,8 +118,8 @@ export const Contact = () => {
               label="Your Full name"
               type="text"
               name="name"
-              maxLength={512}
-              {...email}
+              maxLength={120}
+              {...name}
             />
             <Input
               required
