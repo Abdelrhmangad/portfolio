@@ -36,6 +36,7 @@
   --textColumnWidth: 36%;
 
   width: 100%;
+  min-height: 100dvh;
   max-width: var(--maxWidthL);
   align-items: center;
   justify-content: center;
@@ -49,6 +50,10 @@
 
   @media (--mediaLaptop) {
     --textColumnWidth: 40%;
+  }
+
+  @media (--mediaMobile), (--mediaMobileLS) {
+    min-height: auto;
   }
 
   @media (--mediaTablet) {
@@ -83,6 +88,10 @@
   justify-content: center;
   height: 100%;
   width: 100%;
+
+  @media (--mediaMobile), (--mediaMobileLS) {
+    flex-direction: column;
+  }
 }
 
 .model {
@@ -95,16 +104,18 @@
   position: relative;
 
   &[data-device='laptop'] {
-    top: 6%;
-    left: 14%;
+    position: absolute;
+    top: 0%;
+    left: 0px;
 
     @media (--mediaDesktop) {
       --width: 180%;
     }
-
+    @media (--mediaMobile), (--mediaMobileLS) {
+      position: relative;
+    }
     @media (--mediaTablet) {
       --width: 140%;
-
       top: 10%;
       left: 0;
     }

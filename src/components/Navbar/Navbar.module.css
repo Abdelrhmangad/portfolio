@@ -28,6 +28,10 @@
   position: relative;
   z-index: var(--zIndex2);
   color: var(--colorTextBody);
+
+  @media (--mediaMobile), (--mediaMobileLS) {
+    margin-top: -35px;
+  }
 }
 
 .nav {

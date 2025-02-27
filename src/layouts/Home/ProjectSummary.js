@@ -37,7 +37,6 @@ export const ProjectSummary = ({
   const indexText = index < 10 ? `0${index}` : index;
   const phoneSizes = `(max-width: ${media.tablet}px) 30vw, 20vw`;
   const laptopSizes = `(max-width: ${media.tablet}px) 80vw, 40vw`;
-  console.log("model", model);
   const renderKatakana = (device, visible) => (
     <svg
       aria-hidden="true"
@@ -89,7 +88,7 @@ export const ProjectSummary = ({
 
   const renderPreview = visible => (
     <div className={styles.preview}>
-      {model.type === 'laptop' && (
+      {model.type.includes('laptop') && (
         <>
           {renderKatakana('laptop', visible)}
           <div className={styles.model} data-device="laptop">
@@ -98,6 +97,7 @@ export const ProjectSummary = ({
               cameraPosition={{ x: 0, y: 0, z: 8 }}
               showDelay={700}
               show={visible}
+              className={styles.laptop_model}
               models={[
                 {
                   ...deviceModels.laptop,
@@ -111,12 +111,13 @@ export const ProjectSummary = ({
           </div>
         </>
       )}
-      {model.type === 'phone' && (
+      {model.type.includes('phone') && (
         <>
           {renderKatakana('phone', visible)}
           <div className={styles.model} data-device="phone">
             <Model
               alt={model.alt}
+              className={styles.phone_model}
               cameraPosition={{ x: 0, y: 0, z: 11.5 }}
               showDelay={300}
               show={visible}
