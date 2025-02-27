@@ -9,6 +9,7 @@ import { TextArea } from './TextArea';
 export const Input = ({
   id,
   label,
+  name,
   value,
   multiline,
   className,
@@ -63,6 +64,7 @@ export const Input = ({
           onFocus={() => setFocused(true)}
           onBlur={handleBlur}
           value={value}
+          name={name}
           onChange={onChange}
           autoComplete={autoComplete}
           required={required}
