@@ -1,7 +1,13 @@
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
 import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
 import vetutionImg from 'assets/vetutions.png';
+import vetutionMobileImg from 'assets/vetution-mobile.png';
+import vetutionMobileImg2 from 'assets/vetution-mobile2.png';
+
 import cruiseImg from 'assets/cruise-saudi.png';
+import mobileCruiseImg from 'assets/cruise-mobile.png';
+import mobileCruiseImg2 from 'assets/cruise-mobile2.png';
+
 
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
@@ -85,11 +91,15 @@ export const Home = () => {
         buttonText="View project"
         buttonLink="https://vetutions.com"
         model={{
-          type: 'laptop',
+          type: 'laptop & phone',
           alt: 'Landing page screenshot',
           textures: [
             {
-              srcSet: [vetutionImg],
+              srcSet: [vetutionImg, vetutionMobileImg],
+              placeholder: sprTexturePlaceholder,
+            },
+            {
+              srcSet: [vetutionMobileImg2],
               placeholder: sprTexturePlaceholder,
             },
           ],
@@ -109,11 +119,11 @@ export const Home = () => {
           alt: 'Landing page screenshot',
           textures: [
             {
-              srcSet: [cruiseImg],
+              srcSet: [cruiseImg, mobileCruiseImg2],
               placeholder: gamestackTexturePlaceholder,
             },
             {
-              srcSet: [cruiseImg],
+              srcSet: [mobileCruiseImg],
               placeholder: gamestackTexturePlaceholder,
             },
           ],
