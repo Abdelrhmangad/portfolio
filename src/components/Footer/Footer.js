@@ -13,5 +13,9 @@ export const Footer = ({ className }) => (
         Crafted by yours truly
       </Link>
     </Text>
+    <br />
+    <Text size="s" align="center" style={{ width: '100%', marginTop: '1rem' }}>
+      <Link href="/uses">Check my resume</Link>
+    </Text>
   </footer>
 );

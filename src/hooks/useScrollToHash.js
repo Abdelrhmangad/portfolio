@@ -13,8 +13,8 @@ export function useScrollToHash() {
       const targetElement = document.getElementById(id);
       const route = asPath.split('#')[0];
       const newPath = `${route}#${id}`;
-
-      targetElement.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
+      console.log("targetElement", targetElement);
+      targetElement?.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
 
       const handleScroll = () => {
         clearTimeout(scrollTimeout.current);

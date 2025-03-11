@@ -51,11 +51,7 @@ export const Uses = () => {
                     Chrome is my main browser for both development and general use.
                   </ListItem>
                   <ListItem>
-                    <Link href="https://nextjs.org/">Nextjs</Link> and <Link href="https://react.dev/">Reactjs</Link> are my front end
-                    Javascript libraries of choice. Each line of code I write within Nextjs or Reactjs reminds me how much I love JavaScript.
-                  </ListItem>
-                  <ListItem>
-                    I’m also very comfortable with <Link href="https://vuejs.org/">Vuejs</Link> and <Link href="https://v2.nuxt.com/">Nuxtjs</Link>.
+                    <Link href="https://nextjs.org/">Nextjs</Link>, <Link href="https://react.dev/">Reactjs</Link>, <Link href="https://vuejs.org/">Vuejs</Link> and <Link href="https://v2.nuxt.com/">Nuxtjs</Link> are my front end Javascript libraries of choice.
                   </ListItem>
                   <ListItem>
                     For CSS I’ve used css-in-js solutions like

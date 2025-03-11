@@ -27,14 +27,9 @@ export const Home = () => {
   const projectTwo = useRef();
   const projectThree = useRef();
   const details = useRef();
-  useEffect(() => {
-    console.log("This will appear in the browser console!");
-  }, []);
 
   useEffect(() => {
     const sections = [intro, projectOne, projectTwo, projectThree, details];
-    console.log("This will appear in the browser console!", sections);
-
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
         entries.forEach(entry => {
@@ -81,54 +76,57 @@ export const Home = () => {
         disciplines={disciplines}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
-      <ProjectSummary
-        id="vetution"
-        sectionRef={projectOne}
-        visible={visibleSections.includes(projectOne.current)}
-        index={1}
-        title="Marketplace website"
-        description="Developing a marketplace to help veterinaries buy their needs."
-        buttonText="View project"
-        buttonLink="https://vetutions.com"
-        model={{
-          type: 'laptop & phone',
-          alt: 'Landing page screenshot',
-          textures: [
-            {
-              srcSet: [vetutionImg, vetutionMobileImg],
-              placeholder: sprTexturePlaceholder,
-            },
-            {
-              srcSet: [vetutionMobileImg2],
-              placeholder: sprTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-      <ProjectSummary
-        id="cruise"
-        sectionRef={projectThree}
-        visible={visibleSections.includes(projectThree.current)}
-        index={2}
-        title="Cruise Saudi App"
-        description="Cruise Saudi was launched in 2021 to develop the infrastructure and services required to scale a full-suite cruise ecosystem in Saudi Arabia."
-        buttonText="View project"
-        buttonLink="https://cruisesaudi.com/"
-        model={{
-          type: 'laptop & phone',
-          alt: 'Landing page screenshot',
-          textures: [
-            {
-              srcSet: [cruiseImg, mobileCruiseImg2],
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: [mobileCruiseImg],
-              placeholder: gamestackTexturePlaceholder,
-            },
-          ],
-        }}
-      />
+      <section id='projects'>
+        <ProjectSummary
+          id="vetution"
+          sectionRef={projectOne}
+          visible={visibleSections.includes(projectOne.current)}
+          index={1}
+          title="Marketplace website"
+          description="Developing a marketplace to help veterinaries buy their needs."
+          buttonText="View project"
+          buttonLink="https://vetutions.com"
+          model={{
+            type: 'laptop & phone',
+            alt: 'Landing page screenshot',
+            textures: [
+              {
+                srcSet: [vetutionImg, vetutionMobileImg],
+                placeholder: sprTexturePlaceholder,
+              },
+              {
+                srcSet: [vetutionMobileImg2],
+                placeholder: sprTexturePlaceholder,
+              },
+            ],
+          }}
+        />
+        <ProjectSummary
+          id="cruise"
+          sectionRef={projectThree}
+          visible={visibleSections.includes(projectThree.current)}
+          index={2}
+          title="Cruise Saudi App"
+          description="Cruise Saudi was launched in 2021 to develop the infrastructure and services required to scale a full-suite cruise ecosystem in Saudi Arabia."
+          buttonText="View project"
+          buttonLink="https://cruisesaudi.com/"
+          model={{
+            type: 'laptop & phone',
+            alt: 'Landing page screenshot',
+            textures: [
+              {
+                srcSet: [cruiseImg, mobileCruiseImg2],
+                placeholder: gamestackTexturePlaceholder,
+              },
+              {
+                srcSet: [mobileCruiseImg],
+                placeholder: gamestackTexturePlaceholder,
+              },
+            ],
+          }}
+        />
+      </section>
+
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}

@@ -23,14 +23,7 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Gad a frontend developer with more than 4 years of experience, currently I live in Egypt working as a senior frontend developer at{' '}
-      <Link href="https://www.mauve.de/">Mauve</Link>, and I’m also a co-founder of <Link href="https://estansa7.com/">Estansa7</Link>.
-    </Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      My projects include UI/UX designs development, UI
-      animations, and web-apps development. Having a keen eye for design with high and updated coding skills allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      I'm a Senior Frontend Developer with over four years of experience building high-performance web applications using modern JavaScript frameworks like React, Next.js, Vue, and Nuxt.js. I love crafting clean, scalable, and user-friendly solutions that not only look great but also perform seamlessly. Passionate about accessibility, maintainable code, and optimizing user experiences, I thrive on bringing ideas to life through intuitive and efficient frontend development, check out my <Link href="/uses">uses page</Link>.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       In my spare time I like to read , and play video games. I’m always down for hearing
