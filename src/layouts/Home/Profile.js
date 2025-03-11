@@ -23,7 +23,7 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I'm a Senior Frontend Developer with over four years of experience building high-performance web applications using modern JavaScript frameworks like React, Next.js, Vue, and Nuxt.js. I love crafting clean, scalable, and user-friendly solutions that not only look great but also perform seamlessly. Passionate about accessibility, maintainable code, and optimizing user experiences, I thrive on bringing ideas to life through intuitive and efficient frontend development, check out my <Link href="/uses">uses page</Link>.
+      I’m a Senior Frontend Developer with over four years of experience building high-performance web applications using modern JavaScript frameworks like React, Next.js, Vue, and Nuxt.js. I love crafting clean, scalable, and user-friendly solutions that not only look great but also perform seamlessly. Passionate about accessibility, maintainable code, and optimizing user experiences, I thrive on bringing ideas to life through intuitive and efficient frontend development, check out my <Link href="/uses">uses page</Link>.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       In my spare time I like to read , and play video games. I’m always down for hearing
